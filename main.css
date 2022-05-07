@@ -1,0 +1,199 @@
+/*  Css Reset  */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  Styles  */
+body{
+    font-family: Manrope;
+    background-color: #fff;
+}
+h1,h2,h3,h4{
+    line-height: 1.75em;
+    letter-spacing: 0.02em;
+}
+h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+h3{
+    font-size: 26px;
+    font-weight: 400;
+}
+h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+p,#ps,#pl{
+    line-height: 1.75em;
+    color: rgba(0, 0, 0, 0.87);
+}
+p{
+    font-size: 16px;
+}
+#ps{
+    font-size: 14px;
+}
+#pl{
+    font-size: 18px;
+}
+.horoscope{
+    text-decoration: none;
+    color: #000;
+}
+button{
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.nav-container{
+    max-width: 550px;
+    padding: 35px 0;
+    margin: 0 auto;
+}
+nav ul{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #000;
+    cursor: pointer;
+}
+nav ul li a:focus{
+    color: #000;
+    cursor: pointer;
+}
+.container{
+    max-width: 555px;
+    margin: 0 auto;
+}
+.header{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.header h1{
+    margin-bottom: 8px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.grid-item{
+    border:1px solid #ccc;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.grid-item #ps,.grid-item h4,.grid-item img{
+    max-width: 135px;
+}
+.grid-item img{
+    border-radius: 0px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 16px;
+}
+.card-content h4{
+    margin-top: 10px;
+}
+.horoscopes{
+    margin-bottom: 192px;
+}
+.horoscope-name-date{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+.horoscope-name-date #pl{
+    padding-bottom: 7px;
+    padding-left: 12px;
+}
+.horoscope-details{
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 20px 24px 30px 24px;
+    margin-bottom: 48px;
+    margin-top: 84px;
+}
+.circle{
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 100%;
+    margin-top: 12px;
+    visibility: hidden;
+}
+.active .circle{
+    visibility: visible;
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
